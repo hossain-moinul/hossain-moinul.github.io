@@ -2,9 +2,9 @@
    Do not put passwords, API secrets, or private tokens in this file. */
 (() => {
   const config = {
-    provider: 'off', // 'off', 'goatcounter', or 'google'
+    provider: 'google', // 'off', 'goatcounter', or 'google'
     goatcounterEndpoint: '', // https://YOURCODE.goatcounter.com/count
-    googleMeasurementId: '' // G-XXXXXXXXXX, from your GA4 Web data stream
+    googleMeasurementId: 'G-6S2P0Z9HZ3' // G-XXXXXXXXXX, from your GA4 Web data stream
   };
   const localHosts = ['localhost', '127.0.0.1', '::1', '[::1]'];
   if (config.provider === 'off' || !['http:', 'https:'].includes(location.protocol) || localHosts.includes(location.hostname)) return;
